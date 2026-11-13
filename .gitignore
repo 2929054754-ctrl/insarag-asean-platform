@@ -6,3 +6,4 @@ __pycache__/
 app/out/
 .vercel
 .netlify
+node_modules/

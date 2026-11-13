@@ -1,0 +1,11 @@
+{
+  "rows": 2982,
+  "dim": 512,
+  "counts": {
+    "news": 10,
+    "aggregator": 103,
+    "corpus": 2198,
+    "terminology": 558,
+    "embeddings": 2982
+  }
+}

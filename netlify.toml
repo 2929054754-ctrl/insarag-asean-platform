@@ -3,13 +3,13 @@
   base = "app"
   publish = "out"
   functions = "netlify/functions"
-  command = "pip install -r requirements-prod.txt && bash build_static.sh"
+  command = "npm install --no-audit --no-fund && bash build_static.sh"
 
-# Ship the prebuilt SQLite vector store and all source data inside the function
+# Ship the offline-exported data artifacts inside the JS function
 [functions]
-  included_files = ["data/app.db", "sources/**"]
+  included_files = ["function_data/**"]
 
-# All non-static traffic goes to the ASGI function
+# Unmatched paths (not shadowed by a static file) go to the function
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/app"
