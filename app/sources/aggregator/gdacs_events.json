@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "gdacs-1575420",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Greece",
+      "zh": "希腊发生 4.9 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575420&episodeid=1744459&eventtype=EQ",
+    "publish_date": "2026-11-03T11:03:47",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.9 Earthquake in Greece at: 03 Nov 2026 11:03:47.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-03 11:03发生地震。震级参数：Magnitude 4.9M, Depth:45.662km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.9 Earthquake in Greece at: 03 Nov 2026 11:03:47. Magnitude 4.9M, Depth:45.662km Report period: 2026-11-03T11:03:47 to 2026-11-03T11:03:47. Source: NEIC; Alert level: Green. Affected countries/territories: Greece.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-03 11:03发生地震。震级参数：Magnitude 4.9M, Depth:45.662km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "ec8a184d14d40aff967d4f5303b7bc26eaa264897bd7c359ba2d57976954e771",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575413",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Colombia",
+      "zh": "哥伦比亚发生 5.4 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575413&episodeid=1744448&eventtype=EQ",
+    "publish_date": "2026-11-03T09:13:14",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.4 Earthquake in Colombia at: 03 Nov 2026 09:13:14.",
+      "zh": "据全球灾害预警系统（GDACS）监测，哥伦比亚于2026-11-03 09:13发生地震。震级参数：Magnitude 5.4M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.4 Earthquake in Colombia at: 03 Nov 2026 09:13:14. Magnitude 5.4M, Depth:10km Report period: 2026-11-03T09:13:14 to 2026-11-03T09:13:14. Source: NEIC; Alert level: Green. Affected countries/territories: Colombia.",
+      "zh": "据全球灾害预警系统（GDACS）监测，哥伦比亚于2026-11-03 09:13发生地震。震级参数：Magnitude 5.4M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "6d33c4e37d926f514de6ede3da8efee5a52bc1bee0dd6e107f7c82b239b3d858",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575395",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Japan",
+      "zh": "日本发生 4.8 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575395&episodeid=1744449&eventtype=EQ",
+    "publish_date": "2026-11-03T05:40:18",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.8 Earthquake in Japan at: 03 Nov 2026 05:40:18.",
+      "zh": "据全球灾害预警系统（GDACS）监测，日本于2026-11-03 05:40发生地震。震级参数：Magnitude 4.8M, Depth:52.267km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.8 Earthquake in Japan at: 03 Nov 2026 05:40:18. Magnitude 4.8M, Depth:52.267km Report period: 2026-11-03T05:40:18 to 2026-11-03T05:40:18. Source: NEIC; Alert level: Green. Affected countries/territories: Japan.",
+      "zh": "据全球灾害预警系统（GDACS）监测，日本于2026-11-03 05:40发生地震。震级参数：Magnitude 4.8M, Depth:52.267km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "7dc36a72aabc63539c7abe76f2462d7b189eb053fce6b028f4fa650477f52dc6",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575396",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Myanmar",
+      "zh": "缅甸发生 4.5 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575396&episodeid=1744450&eventtype=EQ",
+    "publish_date": "2026-11-03T05:23:44",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.5 Earthquake in Myanmar at: 03 Nov 2026 05:23:44.",
+      "zh": "据全球灾害预警系统（GDACS）监测，缅甸于2026-11-03 05:23发生地震。震级参数：Magnitude 4.5M, Depth:116.353km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.5 Earthquake in Myanmar at: 03 Nov 2026 05:23:44. Magnitude 4.5M, Depth:116.353km Report period: 2026-11-03T05:23:44 to 2026-11-03T05:23:44. Source: NEIC; Alert level: Green. Affected countries/territories: Myanmar.",
+      "zh": "据全球灾害预警系统（GDACS）监测，缅甸于2026-11-03 05:23发生地震。震级参数：Magnitude 4.5M, Depth:116.353km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "88956c77a3c1e95cb2fb34cadef1d5892e59276456b47a6bd0610db1a79f2966",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575382",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Russia",
+      "zh": "俄罗斯发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575382&episodeid=1744416&eventtype=EQ",
+    "publish_date": "2026-11-03T03:13:12",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in Russia at: 03 Nov 2026 03:13:12.",
+      "zh": "据全球灾害预警系统（GDACS）监测，俄罗斯于2026-11-03 03:13发生地震。震级参数：Magnitude 4.7M, Depth:75.58km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in Russia at: 03 Nov 2026 03:13:12. Magnitude 4.7M, Depth:75.58km Report period: 2026-11-03T03:13:12 to 2026-11-03T03:13:12. Source: NEIC; Alert level: Green. Affected countries/territories: Russia.",
+      "zh": "据全球灾害预警系统（GDACS）监测，俄罗斯于2026-11-03 03:13发生地震。震级参数：Magnitude 4.7M, Depth:75.58km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-03 至 2026-11-03。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "f1fcbf7d8ffb110ed556d6eb3ab5903f05d81f0c0da473d466490133ebf0f649",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575326",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Vanuatu Islands",
+      "zh": "瓦努阿图群岛发生 4.6 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575326&episodeid=1744353&eventtype=EQ",
+    "publish_date": "2026-11-02T20:54:25",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.6 Earthquake in Vanuatu Islands at: 02 Nov 2026 20:54:25.",
+      "zh": "据全球灾害预警系统（GDACS）监测，瓦努阿图群岛于2026-11-02 20:54发生地震。震级参数：Magnitude 4.6M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.6 Earthquake in Vanuatu Islands at: 02 Nov 2026 20:54:25. Magnitude 4.6M, Depth:10km Report period: 2026-11-02T20:54:25 to 2026-11-02T20:54:25. Source: NEIC; Alert level: Green.",
+      "zh": "据全球灾害预警系统（GDACS）监测，瓦努阿图群岛于2026-11-02 20:54发生地震。震级参数：Magnitude 4.6M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "4eaea455bd50e7ffb4a5b92e5c1a2c8996ca20560cf0362315069316ccd2a617",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575318",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in South Of Mariana Islands",
+      "zh": "马里亚纳群岛以南海域发生 4.5 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575318&episodeid=1744344&eventtype=EQ",
+    "publish_date": "2026-11-02T19:59:04",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.5 Earthquake in South Of Mariana Islands at: 02 Nov 2026 19:59:04.",
+      "zh": "据全球灾害预警系统（GDACS）监测，马里亚纳群岛以南海域于2026-11-02 19:59发生地震。震级参数：Magnitude 4.5M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.5 Earthquake in South Of Mariana Islands at: 02 Nov 2026 19:59:04. Magnitude 4.5M, Depth:10km Report period: 2026-11-02T19:59:04 to 2026-11-02T19:59:04. Source: NEIC; Alert level: Green.",
+      "zh": "据全球灾害预警系统（GDACS）监测，马里亚纳群岛以南海域于2026-11-02 19:59发生地震。震级参数：Magnitude 4.5M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "c6ee1547f1b99336c06c002a209b836dd532bb35ce31aacafc09dd2764cda788",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575283",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Greece",
+      "zh": "希腊发生 5.3 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575283&episodeid=1744311&eventtype=EQ",
+    "publish_date": "2026-11-02T16:49:17",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.3 Earthquake in Greece at: 02 Nov 2026 16:49:17.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-02 16:49发生地震。震级参数：Magnitude 5.3M, Depth:48.525km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.3 Earthquake in Greece at: 02 Nov 2026 16:49:17. Magnitude 5.3M, Depth:48.525km Report period: 2026-11-02T16:49:17 to 2026-11-02T16:49:17. Source: NEIC; Alert level: Green. Affected countries/territories: Greece.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-02 16:49发生地震。震级参数：Magnitude 5.3M, Depth:48.525km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "4ed596d2c0a6a59ec5ad4a1171c09588fd1289ce93801e22c0af044ee3ceb62a",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575276",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in China",
+      "zh": "中国发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575276&episodeid=1744304&eventtype=EQ",
+    "publish_date": "2026-11-02T15:35:12",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in China at: 02 Nov 2026 15:35:12.",
+      "zh": "据全球灾害预警系统（GDACS）监测，中国于2026-11-02 15:35发生地震。震级参数：Magnitude 4.7M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in China at: 02 Nov 2026 15:35:12. Magnitude 4.7M, Depth:10km Report period: 2026-11-02T15:35:12 to 2026-11-02T15:35:12. Source: NEIC; Alert level: Green. Affected countries/territories: China.",
+      "zh": "据全球灾害预警系统（GDACS）监测，中国于2026-11-02 15:35发生地震。震级参数：Magnitude 4.7M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "b28887fe9ef8675aa16a73efe3be2fd76eba08372a5f1c35a68a7b8c392f17de",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575275",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Peru",
+      "zh": "秘鲁发生 5.1 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575275&episodeid=1744300&eventtype=EQ",
+    "publish_date": "2026-11-02T15:28:13",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.1 Earthquake in Peru at: 02 Nov 2026 15:28:13.",
+      "zh": "据全球灾害预警系统（GDACS）监测，秘鲁于2026-11-02 15:28发生地震。震级参数：Magnitude 5.1M, Depth:67.239km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.1 Earthquake in Peru at: 02 Nov 2026 15:28:13. Magnitude 5.1M, Depth:67.239km Report period: 2026-11-02T15:28:13 to 2026-11-02T15:28:13. Source: NEIC; Alert level: Green. Affected countries/territories: Peru.",
+      "zh": "据全球灾害预警系统（GDACS）监测，秘鲁于2026-11-02 15:28发生地震。震级参数：Magnitude 5.1M, Depth:67.239km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "b90baac37af2bd0e5ba859c606dea22387ce6552a5953981150c0a7283cd667f",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575265",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in South Of Fiji Islands",
+      "zh": "斐济群岛以南海域发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575265&episodeid=1744289&eventtype=EQ",
+    "publish_date": "2026-11-02T14:05:23",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in South Of Fiji Islands at: 02 Nov 2026 14:05:23.",
+      "zh": "据全球灾害预警系统（GDACS）监测，斐济群岛以南海域于2026-11-02 14:05发生地震。震级参数：Magnitude 4.7M, Depth:502.364km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in South Of Fiji Islands at: 02 Nov 2026 14:05:23. Magnitude 4.7M, Depth:502.364km Report period: 2026-11-02T14:05:23 to 2026-11-02T14:05:23. Source: NEIC; Alert level: Green.",
+      "zh": "据全球灾害预警系统（GDACS）监测，斐济群岛以南海域于2026-11-02 14:05发生地震。震级参数：Magnitude 4.7M, Depth:502.364km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "95a77afc4c01eed681a22345b3d74d06338d97abeb853976c1356d6363d7e22c",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575228",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Greece",
+      "zh": "希腊发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575228&episodeid=1744256&eventtype=EQ",
+    "publish_date": "2026-11-02T08:59:22",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in Greece at: 02 Nov 2026 08:59:22.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-02 08:59发生地震。震级参数：Magnitude 4.7M, Depth:40.168km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in Greece at: 02 Nov 2026 08:59:22. Magnitude 4.7M, Depth:40.168km Report period: 2026-11-02T08:59:22 to 2026-11-02T08:59:22. Source: NEIC; Alert level: Green. Affected countries/territories: Greece.",
+      "zh": "据全球灾害预警系统（GDACS）监测，希腊于2026-11-02 08:59发生地震。震级参数：Magnitude 4.7M, Depth:40.168km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "045006f162dd8375562b56c70319023db8c038bbdd0eeaf5d6d0b9f16f944459",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575227",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Philippines",
+      "zh": "菲律宾发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575227&episodeid=1744248&eventtype=EQ",
+    "publish_date": "2026-11-02T08:42:47",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in Philippines at: 02 Nov 2026 08:42:47.",
+      "zh": "据全球灾害预警系统（GDACS）监测，菲律宾于2026-11-02 08:42发生地震。震级参数：Magnitude 4.7M, Depth:35km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in Philippines at: 02 Nov 2026 08:42:47. Magnitude 4.7M, Depth:35km Report period: 2026-11-02T08:42:47 to 2026-11-02T08:42:47. Source: NEIC; Alert level: Green. Affected countries/territories: Philippines.",
+      "zh": "据全球灾害预警系统（GDACS）监测，菲律宾于2026-11-02 08:42发生地震。震级参数：Magnitude 4.7M, Depth:35km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "59483d448c2095826d3ff698f8f5622da7464bb02386f4fac7434b8dad68c3c0",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575222",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Indonesia",
+      "zh": "印度尼西亚发生 5.1 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575222&episodeid=1744242&eventtype=EQ",
+    "publish_date": "2026-11-02T08:13:14",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.1 Earthquake in Indonesia at: 02 Nov 2026 08:13:14.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度尼西亚于2026-11-02 08:13发生地震。震级参数：Magnitude 5.1M, Depth:196.646km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.1 Earthquake in Indonesia at: 02 Nov 2026 08:13:14. Magnitude 5.1M, Depth:196.646km Report period: 2026-11-02T08:13:14 to 2026-11-02T08:13:14. Source: NEIC; Alert level: Green. Affected countries/territories: Indonesia.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度尼西亚于2026-11-02 08:13发生地震。震级参数：Magnitude 5.1M, Depth:196.646km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "05bb19ca23e77344215e6cbb08628c6d61b6f9467ed1ba26ba672f5e748029ed",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575203",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Papua New Guinea",
+      "zh": "巴布亚新几内亚发生 4.9 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575203&episodeid=1744219&eventtype=EQ",
+    "publish_date": "2026-11-02T05:19:50",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.9 Earthquake in Papua New Guinea at: 02 Nov 2026 05:19:50.",
+      "zh": "据全球灾害预警系统（GDACS）监测，巴布亚新几内亚于2026-11-02 05:19发生地震。震级参数：Magnitude 4.9M, Depth:87.891km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.9 Earthquake in Papua New Guinea at: 02 Nov 2026 05:19:50. Magnitude 4.9M, Depth:87.891km Report period: 2026-11-02T05:19:50 to 2026-11-02T05:19:50. Source: NEIC; Alert level: Green. Affected countries/territories: Papua New Guinea.",
+      "zh": "据全球灾害预警系统（GDACS）监测，巴布亚新几内亚于2026-11-02 05:19发生地震。震级参数：Magnitude 4.9M, Depth:87.891km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "e6531cc71a8c81ae2cde5e81ba6e006fbe724b2f700db0008187b9b4504fba3e",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575202",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Russia",
+      "zh": "俄罗斯发生 4.6 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575202&episodeid=1744217&eventtype=EQ",
+    "publish_date": "2026-11-02T04:45:48",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.6 Earthquake in Russia at: 02 Nov 2026 04:45:48.",
+      "zh": "据全球灾害预警系统（GDACS）监测，俄罗斯于2026-11-02 04:45发生地震。震级参数：Magnitude 4.6M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.6 Earthquake in Russia at: 02 Nov 2026 04:45:48. Magnitude 4.6M, Depth:10km Report period: 2026-11-02T04:45:48 to 2026-11-02T04:45:48. Source: NEIC; Alert level: Green. Affected countries/territories: Russia.",
+      "zh": "据全球灾害预警系统（GDACS）监测，俄罗斯于2026-11-02 04:45发生地震。震级参数：Magnitude 4.6M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "f8cbaa80921e14273674af7cc54e4b3bfcb7c9541a584c3c82366d8ad54e993e",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575198",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Mid-Indian Ridge",
+      "zh": "印度洋中脊发生 4.7 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575198&episodeid=1744222&eventtype=EQ",
+    "publish_date": "2026-11-02T02:43:47",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.7 Earthquake in Mid-Indian Ridge at: 02 Nov 2026 02:43:47.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度洋中脊于2026-11-02 02:43发生地震。震级参数：Magnitude 4.7M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.7 Earthquake in Mid-Indian Ridge at: 02 Nov 2026 02:43:47. Magnitude 4.7M, Depth:10km Report period: 2026-11-02T02:43:47 to 2026-11-02T02:43:47. Source: NEIC; Alert level: Green.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度洋中脊于2026-11-02 02:43发生地震。震级参数：Magnitude 4.7M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "10ed3653b1d9b5be748e5a83dd33ace131f6dbbcd81ba66c3226b1647a636f0b",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575192",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Papua New Guinea",
+      "zh": "巴布亚新几内亚发生 4.5 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575192&episodeid=1744206&eventtype=EQ",
+    "publish_date": "2026-11-02T02:24:03",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.5 Earthquake in Papua New Guinea at: 02 Nov 2026 02:24:03.",
+      "zh": "据全球灾害预警系统（GDACS）监测，巴布亚新几内亚于2026-11-02 02:24发生地震。震级参数：Magnitude 4.5M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.5 Earthquake in Papua New Guinea at: 02 Nov 2026 02:24:03. Magnitude 4.5M, Depth:10km Report period: 2026-11-02T02:24:03 to 2026-11-02T02:24:03. Source: NEIC; Alert level: Green. Affected countries/territories: Papua New Guinea.",
+      "zh": "据全球灾害预警系统（GDACS）监测，巴布亚新几内亚于2026-11-02 02:24发生地震。震级参数：Magnitude 4.5M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "26f32b2967c43cc40c9cd1c6677c9a33a1173817c722503818d06bfa8a578408",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575190",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Taiwan",
+      "zh": "中国台湾发生 4.5 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575190&episodeid=1744203&eventtype=EQ",
+    "publish_date": "2026-11-02T02:23:08",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.5 Earthquake in Taiwan at: 02 Nov 2026 02:23:08.",
+      "zh": "据全球灾害预警系统（GDACS）监测，中国台湾于2026-11-02 02:23发生地震。震级参数：Magnitude 4.5M, Depth:55.087km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.5 Earthquake in Taiwan at: 02 Nov 2026 02:23:08. Magnitude 4.5M, Depth:55.087km Report period: 2026-11-02T02:23:08 to 2026-11-02T02:23:08. Source: NEIC; Alert level: Green. Affected countries/territories: Taiwan.",
+      "zh": "据全球灾害预警系统（GDACS）监测，中国台湾于2026-11-02 02:23发生地震。震级参数：Magnitude 4.5M, Depth:55.087km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "22f68d1f8a1a7cd793ad6a9ab39a24356de5268d0a47b544ae1588da669b1fe4",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575173",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Southeast Of Shikoku, Japan",
+      "zh": "日本四国东南海域发生 4.5 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575173&episodeid=1744184&eventtype=EQ",
+    "publish_date": "2026-11-02T01:54:55",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 4.5 Earthquake in Southeast Of Shikoku, Japan at: 02 Nov 2026 01:54:55.",
+      "zh": "据全球灾害预警系统（GDACS）监测，日本四国东南海域于2026-11-02 01:54发生地震。震级参数：Magnitude 4.5M, Depth:510.072km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 4.5 Earthquake in Southeast Of Shikoku, Japan at: 02 Nov 2026 01:54:55. Magnitude 4.5M, Depth:510.072km Report period: 2026-11-02T01:54:55 to 2026-11-02T01:54:55. Source: NEIC; Alert level: Green. Affected countries/territories: Japan.",
+      "zh": "据全球灾害预警系统（GDACS）监测，日本四国东南海域于2026-11-02 01:54发生地震。震级参数：Magnitude 4.5M, Depth:510.072km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "598f7cf318ed4f6140ed430d356e98edf86ab4ca32bffc4d4618c10c1234a44c",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575171",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Kermadec Islands Region",
+      "zh": "克马德克群岛地区发生 5.1 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575171&episodeid=1744181&eventtype=EQ",
+    "publish_date": "2026-11-02T01:18:16",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.1 Earthquake in Kermadec Islands Region at: 02 Nov 2026 01:18:16.",
+      "zh": "据全球灾害预警系统（GDACS）监测，克马德克群岛地区于2026-11-02 01:18发生地震。震级参数：Magnitude 5.1M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.1 Earthquake in Kermadec Islands Region at: 02 Nov 2026 01:18:16. Magnitude 5.1M, Depth:10km Report period: 2026-11-02T01:18:16 to 2026-11-02T01:18:16. Source: NEIC; Alert level: Green.",
+      "zh": "据全球灾害预警系统（GDACS）监测，克马德克群岛地区于2026-11-02 01:18发生地震。震级参数：Magnitude 5.1M, Depth:10km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "12982cd1b82304470d1753138dd01af1c7d4ba938abb00b2c543c9485d03e37d",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1575167",
+    "source": "GDACS",
+    "title": {
+      "en": "Earthquake in Indonesia",
+      "zh": "印度尼西亚发生 5.1 级地震（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1575167&episodeid=1744180&eventtype=EQ",
+    "publish_date": "2026-11-02T00:53:09",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "EQ",
+    "summary": {
+      "en": "Green M 5.1 Earthquake in Indonesia at: 02 Nov 2026 00:53:09.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度尼西亚于2026-11-02 00:53发生地震。震级参数：Magnitude 5.1M, Depth:93.548km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green M 5.1 Earthquake in Indonesia at: 02 Nov 2026 00:53:09. Magnitude 5.1M, Depth:93.548km Report period: 2026-11-02T00:53:09 to 2026-11-02T00:53:09. Source: NEIC; Alert level: Green. Affected countries/territories: Indonesia.",
+      "zh": "据全球灾害预警系统（GDACS）监测，印度尼西亚于2026-11-02 00:53发生地震。震级参数：Magnitude 5.1M, Depth:93.548km。预警级别：Green。观测机构：NEIC。事件有效期：2026-11-02 至 2026-11-02。完整报告见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "a7d9fddd12475fc3c6ec5ee23d9ef04149f6ffae9ecccc7aee63c620aeba3e89",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1104267",
+    "source": "GDACS",
+    "title": {
+      "en": "Flood in Bulgaria",
+      "zh": "保加利亚洪水灾害（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1104267&episodeid=1&eventtype=FL",
+    "publish_date": "2026-11-02T01:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "FL",
+    "summary": {
+      "en": "Green Flood in Bulgaria from: 02 Nov 2026 01 to: 04 Nov 2026 01.",
+      "zh": "据 GDACS 监测，保加利亚发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-11-02 至 2026-11-04。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Flood in Bulgaria from: 02 Nov 2026 01 to: 04 Nov 2026 01. Magnitude 0  Report period: 2026-11-02T01:00:00 to 2026-11-04T01:00:00. Source: GLOFAS; Alert level: Green. Affected countries/territories: Bulgaria.",
+      "zh": "据 GDACS 监测，保加利亚发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-11-02 至 2026-11-04。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "1895e8e911be1de531442c7df5e1616213342fe6f77d6a75a05c0e3d3049c074",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1104268",
+    "source": "GDACS",
+    "title": {
+      "en": "Flood in Spain",
+      "zh": "西班牙洪水灾害（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1104268&episodeid=1&eventtype=FL",
+    "publish_date": "2026-11-01T01:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "FL",
+    "summary": {
+      "en": "Green Flood in Spain from: 01 Nov 2026 01 to: 03 Nov 2026 01.",
+      "zh": "据 GDACS 监测，西班牙发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-11-01 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Flood in Spain from: 01 Nov 2026 01 to: 03 Nov 2026 01. Magnitude 0  Report period: 2026-11-01T01:00:00 to 2026-11-03T01:00:00. Source: GLOFAS; Alert level: Green. Affected countries/territories: Spain.",
+      "zh": "据 GDACS 监测，西班牙发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-11-01 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "d133721f477a0106fb428a73295f760cc582c29d420ce86ce2fdd7efcd9809c1",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1104266",
+    "source": "GDACS",
+    "title": {
+      "en": "Flood in Philippines",
+      "zh": "菲律宾洪水灾害（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1104266&episodeid=2&eventtype=FL",
+    "publish_date": "2026-10-29T01:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "FL",
+    "summary": {
+      "en": "Green Flood in Philippines from: 29 Oct 2026 01 to: 03 Nov 2026 01.",
+      "zh": "据 GDACS 监测，菲律宾发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-10-29 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Flood in Philippines from: 29 Oct 2026 01 to: 03 Nov 2026 01. Magnitude 0  Report period: 2026-10-29T01:00:00 to 2026-11-03T01:00:00. Source: GLOFAS; Alert level: Green. Affected countries/territories: Philippines.",
+      "zh": "据 GDACS 监测，菲律宾发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-10-29 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "2f7c91c3db79934a06a98fadb21197aab6d986854dcf1e2211af5b7e1c0a04ea",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1104239",
+    "source": "GDACS",
+    "title": {
+      "en": "Flood in Malaysia",
+      "zh": "马来西亚洪水灾害（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1104239&episodeid=3&eventtype=FL",
+    "publish_date": "2026-10-15T01:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "FL",
+    "summary": {
+      "en": "Green Flood in Malaysia from: 15 Oct 2026 01 to: 03 Nov 2026 01.",
+      "zh": "据 GDACS 监测，马来西亚发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-10-15 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Flood in Malaysia from: 15 Oct 2026 01 to: 03 Nov 2026 01. Magnitude 0  Report period: 2026-10-15T01:00:00 to 2026-11-03T01:00:00. Source: GLOFAS; Alert level: Green. Affected countries/territories: Malaysia.",
+      "zh": "据 GDACS 监测，马来西亚发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-10-15 至 2026-11-03。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "9a9bc8d7f79c523efa403608414f331ac3342291fbcd1f7736166da7374541e7",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1104167",
+    "source": "GDACS",
+    "title": {
+      "en": "Flood in Ecuador",
+      "zh": "Ecuador洪水灾害（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1104167&episodeid=14&eventtype=FL",
+    "publish_date": "2026-09-15T01:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "FL",
+    "summary": {
+      "en": "Green Flood in Ecuador from: 15 Sep 2026 01 to: 02 Nov 2026 01.",
+      "zh": "据 GDACS 监测，Ecuador发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-09-15 至 2026-11-02。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Flood in Ecuador from: 15 Sep 2026 01 to: 02 Nov 2026 01. Magnitude 0  Report period: 2026-09-15T01:00:00 to 2026-11-02T01:00:00. Source: GLOFAS; Alert level: Green. Affected countries/territories: Ecuador.",
+      "zh": "据 GDACS 监测，Ecuador发生洪水灾害。预警级别：Green，数据来源：GLOFAS（全球径流预报系统）。事件有效期：2026-09-15 至 2026-11-02。完整灾情与淹没范围见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "1b3626eb6a5e40ed57f40524e24e82a19e2d55178713adb79c9075415c22f3dd",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1001346",
+    "source": "GDACS",
+    "title": {
+      "en": "Tropical Cyclone MURASU-26",
+      "zh": "热带气旋 MURASU-26 影响印度（GDACS Red 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=10&eventtype=TC",
+    "publish_date": "2026-11-01T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "TC",
+    "summary": {
+      "en": "Red Tropical Cyclone MURASU-26 in India from: 01 Nov 2026  to: 03 Nov 2026 .",
+      "zh": "据 GDACS 监测，热带气旋 MURASU-26 影响印度。强度：Hurricane/Typhoon > 74 mph (maximum wind speed of 157 km/h)。预警级别：Red（红色最高级）。事件有效期：2026-11-01 至 2026-11-03。路径、风速与登陆预报见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Red Tropical Cyclone MURASU-26 in India from: 01 Nov 2026  to: 03 Nov 2026 . Hurricane/Typhoon > 74 mph (maximum wind speed of 157 km/h) Report period: 2026-11-01T00:00:00 to 2026-11-03T06:00:00. Source: JTWC; Alert level: Red. Affected countries/territories: India.",
+      "zh": "据 GDACS 监测，热带气旋 MURASU-26 影响印度。强度：Hurricane/Typhoon > 74 mph (maximum wind speed of 157 km/h)。预警级别：Red（红色最高级）。事件有效期：2026-11-01 至 2026-11-03。路径、风速与登陆预报见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "d3701aab79b5f8a0d7f3d689d4d3a1151eb4e22e80f1601223d7c05155476e7a",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1001343",
+    "source": "GDACS",
+    "title": {
+      "en": "Tropical Cyclone IN-FA-26",
+      "zh": "热带气旋 IN-FA-26 影响Japan, Marshall Islands（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1001343&episodeid=44&eventtype=TC",
+    "publish_date": "2026-10-25T06:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "TC",
+    "summary": {
+      "en": "Green Tropical Cyclone IN-FA-26 in Japan, Marshall Islands from: 25 Oct 2026  to: 03 Nov 2026 .",
+      "zh": "据 GDACS 监测，热带气旋 IN-FA-26 影响Japan, Marshall Islands。强度：Hurricane/Typhoon > 74 mph (maximum wind speed of 241 km/h)。预警级别：Green（红色最高级）。事件有效期：2026-10-25 至 2026-11-03。路径、风速与登陆预报见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Tropical Cyclone IN-FA-26 in Japan, Marshall Islands from: 25 Oct 2026  to: 03 Nov 2026 . Hurricane/Typhoon > 74 mph (maximum wind speed of 241 km/h) Report period: 2026-10-25T06:00:00 to 2026-11-03T06:00:00. Source: JTWC; Alert level: Green. Affected countries/territories: Japan.",
+      "zh": "据 GDACS 监测，热带气旋 IN-FA-26 影响Japan, Marshall Islands。强度：Hurricane/Typhoon > 74 mph (maximum wind speed of 241 km/h)。预警级别：Green（红色最高级）。事件有效期：2026-10-25 至 2026-11-03。路径、风速与登陆预报见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "2ee95cd8e2da2bb5f9d1af55df61f2ff8a83b434a6e1bd4b49967da262cfa537",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033450",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Australia",
+      "zh": "澳大利亚森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033450&episodeid=1&eventtype=WF",
+    "publish_date": "2026-11-02T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Australia from: 02 Nov 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，澳大利亚发生森林火灾。过火面积：Green impact for forestfire in 5674 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-11-02 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Australia from: 02 Nov 2026 to: 03 Nov 2026. Green impact for forestfire in 5674 ha Report period: 2026-11-02T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Australia.",
+      "zh": "据 GDACS 监测，澳大利亚发生森林火灾。过火面积：Green impact for forestfire in 5674 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-11-02 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "77f4084e8d93274e38bb02d5d243ae9b4d4cb00c8660086d975a999b275bc063",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033427",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Botswana",
+      "zh": "博茨瓦纳森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033427&episodeid=1&eventtype=WF",
+    "publish_date": "2026-11-01T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Botswana from: 01 Nov 2026 to: 02 Nov 2026.",
+      "zh": "据 GDACS 监测，博茨瓦纳发生森林火灾。过火面积：Green impact for forestfire in 5583 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-11-01 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Botswana from: 01 Nov 2026 to: 02 Nov 2026. Green impact for forestfire in 5583 ha Report period: 2026-11-01T00:00:00 to 2026-11-02T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Botswana.",
+      "zh": "据 GDACS 监测，博茨瓦纳发生森林火灾。过火面积：Green impact for forestfire in 5583 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-11-01 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "62cab8c1a8b4ca742a19037efc12616daef186cdd733bb3e7a8b6d1ace79f7e2",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033449",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in South Sudan",
+      "zh": "南苏丹森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033449&episodeid=1&eventtype=WF",
+    "publish_date": "2026-10-31T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in South Sudan from: 31 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，南苏丹发生森林火灾。过火面积：Green impact for forestfire in 5003 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in South Sudan from: 31 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 5003 ha Report period: 2026-10-31T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: South Sudan.",
+      "zh": "据 GDACS 监测，南苏丹发生森林火灾。过火面积：Green impact for forestfire in 5003 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "4c102d207cb5c0db34406e017ea4ed5615e25e91cf4777cff93b2e56e4a80af6",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033400",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in South Sudan, Sudan",
+      "zh": "南苏丹、苏丹森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033400&episodeid=4&eventtype=WF",
+    "publish_date": "2026-10-31T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in South Sudan, Sudan from: 31 Oct 2026 to: 02 Nov 2026.",
+      "zh": "据 GDACS 监测，南苏丹、苏丹发生森林火灾。过火面积：Green impact for forestfire in 9833 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in South Sudan, Sudan from: 31 Oct 2026 to: 02 Nov 2026. Green impact for forestfire in 9833 ha Report period: 2026-10-31T00:00:00 to 2026-11-02T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: South Sudan, Sudan.",
+      "zh": "据 GDACS 监测，南苏丹、苏丹发生森林火灾。过火面积：Green impact for forestfire in 9833 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "62f6c397fb519d72cd85967792062d8f0c400aee98b39c647a10065956c40548",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033429",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Central African Republic, Chad",
+      "zh": "中非共和国、乍得森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033429&episodeid=1&eventtype=WF",
+    "publish_date": "2026-10-31T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Central African Republic, Chad from: 31 Oct 2026 to: 02 Nov 2026.",
+      "zh": "据 GDACS 监测，中非共和国、乍得发生森林火灾。过火面积：Green impact for forestfire in 5870 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Central African Republic, Chad from: 31 Oct 2026 to: 02 Nov 2026. Green impact for forestfire in 5870 ha Report period: 2026-10-31T00:00:00 to 2026-11-02T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Central African Republic, Chad.",
+      "zh": "据 GDACS 监测，中非共和国、乍得发生森林火灾。过火面积：Green impact for forestfire in 5870 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-31 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "52e0ca709e37029d61b2ca302835a0780bbb77240145e0a30b34d932d2388a17",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033360",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Nigeria, Cameroon",
+      "zh": "尼日利亚、喀麦隆森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033360&episodeid=12&eventtype=WF",
+    "publish_date": "2026-10-30T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Nigeria, Cameroon from: 30 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，尼日利亚、喀麦隆发生森林火灾。过火面积：Green impact for forestfire in 13707 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Nigeria, Cameroon from: 30 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 13707 ha Report period: 2026-10-30T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Nigeria, Cameroon.",
+      "zh": "据 GDACS 监测，尼日利亚、喀麦隆发生森林火灾。过火面积：Green impact for forestfire in 13707 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "87b4f0ab1ee4cbbe119b908a1a5725c6e93ba86617e9d24a98039a99d809da4a",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033388",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Burkina Faso",
+      "zh": "布基纳法索森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033388&episodeid=8&eventtype=WF",
+    "publish_date": "2026-10-30T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Burkina Faso from: 30 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，布基纳法索发生森林火灾。过火面积：Green impact for forestfire in 10017 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Burkina Faso from: 30 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 10017 ha Report period: 2026-10-30T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Burkina Faso.",
+      "zh": "据 GDACS 监测，布基纳法索发生森林火灾。过火面积：Green impact for forestfire in 10017 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "82bc66add9c53db042ae35d051c51062f4df89c1acff8996c714f5669b383e47",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033389",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Brazil",
+      "zh": "巴西森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033389&episodeid=5&eventtype=WF",
+    "publish_date": "2026-10-30T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Brazil from: 30 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，巴西发生森林火灾。过火面积：Green impact for forestfire in 6088 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Brazil from: 30 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6088 ha Report period: 2026-10-30T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Brazil.",
+      "zh": "据 GDACS 监测，巴西发生森林火灾。过火面积：Green impact for forestfire in 6088 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "f590ebdb186a21ffdd113518d9df16903acc37812dfc64a51b07ae73fe39ac0a",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033434",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Nigeria",
+      "zh": "尼日利亚森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033434&episodeid=2&eventtype=WF",
+    "publish_date": "2026-10-30T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Nigeria from: 30 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，尼日利亚发生森林火灾。过火面积：Green impact for forestfire in 5076 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Nigeria from: 30 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 5076 ha Report period: 2026-10-30T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Nigeria.",
+      "zh": "据 GDACS 监测，尼日利亚发生森林火灾。过火面积：Green impact for forestfire in 5076 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-30 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "dcb50b41d94732fc50678bc1f1d7768a3049ad869579d88cc8226b0055ee3d71",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033403",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Mozambique",
+      "zh": "Mozambique森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033403&episodeid=5&eventtype=WF",
+    "publish_date": "2026-10-29T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Mozambique from: 29 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，Mozambique发生森林火灾。过火面积：Green impact for forestfire in 6532 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Mozambique from: 29 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6532 ha Report period: 2026-10-29T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Mozambique.",
+      "zh": "据 GDACS 监测，Mozambique发生森林火灾。过火面积：Green impact for forestfire in 6532 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "c28d810d6f36bbc2add4978910875c46a951361d2096e6b26ccde206dbb97d75",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033404",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Ethiopia, South Sudan",
+      "zh": "Ethiopia, South Sudan森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033404&episodeid=7&eventtype=WF",
+    "publish_date": "2026-10-29T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Ethiopia, South Sudan from: 29 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，Ethiopia, South Sudan发生森林火灾。过火面积：Green impact for forestfire in 6228 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Ethiopia, South Sudan from: 29 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6228 ha Report period: 2026-10-29T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Ethiopia, South Sudan.",
+      "zh": "据 GDACS 监测，Ethiopia, South Sudan发生森林火灾。过火面积：Green impact for forestfire in 6228 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "21f04e7008cd6a1ba0e92625618eafe21ebc5593adc4d0b085489b9799232237",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033458",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Indonesia",
+      "zh": "印度尼西亚森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033458&episodeid=1&eventtype=WF",
+    "publish_date": "2026-10-29T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Indonesia from: 29 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，印度尼西亚发生森林火灾。过火面积：Green impact for forestfire in 6092 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Indonesia from: 29 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6092 ha Report period: 2026-10-29T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Indonesia.",
+      "zh": "据 GDACS 监测，印度尼西亚发生森林火灾。过火面积：Green impact for forestfire in 6092 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "288b3ff3bc1bc236a2c6ec5f4ea8f11e420b9675c9c0dbc130a4cf24bcc6fe62",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033382",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Botswana, Namibia",
+      "zh": "Botswana, Namibia森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033382&episodeid=10&eventtype=WF",
+    "publish_date": "2026-10-29T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Botswana, Namibia from: 29 Oct 2026 to: 02 Nov 2026.",
+      "zh": "据 GDACS 监测，Botswana, Namibia发生森林火灾。过火面积：Green impact for forestfire in 11474 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Botswana, Namibia from: 29 Oct 2026 to: 02 Nov 2026. Green impact for forestfire in 11474 ha Report period: 2026-10-29T00:00:00 to 2026-11-02T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Botswana, Namibia.",
+      "zh": "据 GDACS 监测，Botswana, Namibia发生森林火灾。过火面积：Green impact for forestfire in 11474 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-29 至 2026-11-02。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "40bd36e1f91a7bbe7f2714063f09c11f4f83c4c6625b0cd0a760021fef5abf2b",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033347",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Chad",
+      "zh": "Chad森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033347&episodeid=9&eventtype=WF",
+    "publish_date": "2026-10-28T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Chad from: 28 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，Chad发生森林火灾。过火面积：Green impact for forestfire in 6985 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-28 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Chad from: 28 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6985 ha Report period: 2026-10-28T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Chad.",
+      "zh": "据 GDACS 监测，Chad发生森林火灾。过火面积：Green impact for forestfire in 6985 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-28 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "9d011330af2fb0bf389644cc29541afbfd902939fc521bdac4488b5689ef186b",
+    "version": "2.0"
+  },
+  {
+    "id": "gdacs-1033422",
+    "source": "GDACS",
+    "title": {
+      "en": "Forest fires in Central African Republic, Sudan",
+      "zh": "Central African Republic, Sudan森林火灾（GDACS Green 级预警）"
+    },
+    "url": "https://www.gdacs.org/report.aspx?eventid=1033422&episodeid=3&eventtype=WF",
+    "publish_date": "2026-10-28T00:00:00",
+    "language": "en",
+    "domain": "灾害预警",
+    "event_type": "WF",
+    "summary": {
+      "en": "Green Forest fires in Central African Republic, Sudan from: 28 Oct 2026 to: 03 Nov 2026.",
+      "zh": "据 GDACS 监测，Central African Republic, Sudan发生森林火灾。过火面积：Green impact for forestfire in 6460 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-28 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "content": {
+      "en": "Green Forest fires in Central African Republic, Sudan from: 28 Oct 2026 to: 03 Nov 2026. Green impact for forestfire in 6460 ha Report period: 2026-10-28T00:00:00 to 2026-11-03T00:00:00. Source: GWIS; Alert level: Green. Affected countries/territories: Central African Republic, Sudan.",
+      "zh": "据 GDACS 监测，Central African Republic, Sudan发生森林火灾。过火面积：Green impact for forestfire in 6460 ha。预警级别：Green，数据来源：GWIS。事件有效期：2026-10-28 至 2026-11-03。火情分布与卫星热点见 GDACS 原始链接。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T13:18:33Z",
+    "checksum": "a075474ff8c5771e24854aecbd9bc4bfc7ea991e226ab006b60e49905f28d848",
+    "version": "2.0"
+  }
+]

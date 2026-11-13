@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INSARAG 东盟多语种搜救平台</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav"><div class="brand">INSARAG<span class="dot">·</span>ASEAN</div></nav>
+
+<div class="container">
+  <h1>东盟多语种搜救智能平台</h1>
+  <p class="sub">向量嵌入（BigModel / 本地双后端）+ 多语检索 + DeepSeek 流式大模型，整合 INSARAG 新闻、GDACS/AHA 多源聚合、平行语料与术语库。</p>
+
+  <div class="stat-strip" id="stats">
+    <div class="stat"><div class="v" id="st-news">–</div><div class="k">INSARAG 新闻</div></div>
+    <div class="stat"><div class="v" id="st-agg">–</div><div class="k">多源聚合条</div></div>
+    <div class="stat"><div class="v" id="st-corpus">–</div><div class="k">平行句对</div></div>
+    <div class="stat"><div class="v" id="st-term">–</div><div class="k">术语条</div></div>
+    <div class="stat"><div class="v" id="st-vec">–</div><div class="k">切片索引</div></div>
+    <div class="stat"><div class="v" id="st-backend">–</div><div class="k">嵌入后端</div></div>
+  </div>
+
+  <div class="grid">
+    <a class="tile" href="/aggregator">
+      <div class="icon">🌐</div>
+      <h3>多源信息聚合</h3>
+      <p>GDACS / AHA / UNDRR / INSARAG 多源事件与新闻，按源、领域、事件类型筛选，中文浏览，原始 URL 可点。</p>
+    </a>
+    <a class="tile" href="/rag">
+      <div class="icon">🔍</div>
+      <h3>RAG 智能问答</h3>
+      <p>问题向量化 → 四库余弦 Top-K → DeepSeek 流式作答；无依据时明确拒答不臆测，来源附页码。</p>
+    </a>
+    <a class="tile" href="/translate">
+      <div class="icon">🌏</div>
+      <h3>东盟多语互译</h3>
+      <p>10 语种任意互译；命中术语库强制采用规范译法并高亮，附 RAG 来源。</p>
+    </a>
+    <a class="tile" href="/cms">
+      <div class="icon">🗂</div>
+      <h3>知识库 CMS</h3>
+      <p>新闻 / 聚合 / 语料 / 术语四库增删改查，审核状态切换、领域分类筛选，SQLite 持久化。</p>
+    </a>
+    <a class="tile" href="/voice">
+      <div class="icon">🎙</div>
+      <h3>语音流式翻译</h3>
+      <p>浏览器 Web Speech API 识别 → 自动送译，SSE 逐字呈现译文。</p>
+    </a>
+  </div>
+
+  <h2>数据来源</h2>
+  <div class="card">
+    <table>
+      <tr><th>库</th><th>位置</th><th>说明</th></tr>
+      <tr><td>多源聚合</td><td class="mono">data/aggregator/</td><td>GDACS / AHA / UNDRR 事件与新闻，含 source/domain/event_type/review_status</td></tr>
+      <tr><td>INSARAG 新闻</td><td class="mono">data/news/</td><td>en+zh 双语，含源站 URL</td></tr>
+      <tr><td>平行语料</td><td class="mono">data/corpus/parallel_corpus_1to1.json</td><td>en-zh 句级对齐，标注页码与领域</td></tr>
+      <tr><td>INSARAG 术语库</td><td class="mono">data/terminology/INSARAG术语库.xlsx</td><td>中英术语 + 领域 + 审核状态</td></tr>
+      <tr><td>官方指南</td><td class="mono">data/pdf/</td><td>中英文指南 PDF，来源链接可点击核对</td></tr>
+    </table>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+(async () => {
+  try {
+    const s = await api("/api/status");
+    document.getElementById("st-news").textContent = s.counts.news;
+    document.getElementById("st-agg").textContent = s.counts.aggregator;
+    document.getElementById("st-corpus").textContent = s.counts.corpus;
+    document.getElementById("st-term").textContent = s.counts.terminology;
+    document.getElementById("st-vec").textContent = s.counts.embeddings;
+    document.getElementById("st-backend").textContent = s.embedding.backend;
+  } catch (e) { console.warn(e); }
+})();
+</script>
+</body>
+</html>

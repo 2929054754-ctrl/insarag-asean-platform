@@ -1,0 +1,10 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31
+python-dotenv>=1.0
+numpy>=1.26
+scikit-learn>=1.4
+pandas>=2.0
+openpyxl>=3.1
+sentence-transformers>=3.0
+# optional: pip install libsql   # for Turso/libSQL remote DB on serverless

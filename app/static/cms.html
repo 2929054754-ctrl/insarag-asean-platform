@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>知识库 CMS</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav"><div class="brand">INSARAG<span class="dot">·</span>ASEAN</div></nav>
+
+<div class="container">
+  <h1>知识库 CMS</h1>
+  <p class="sub">新闻 / 多源聚合 / 平行语料 / 术语四库管理；支持审核状态切换、领域分类筛选；新增或编辑后自动重新向量化并纳入 RAG。</p>
+
+  <div class="row" style="margin-bottom:10px">
+    <button class="btn" data-tab="news">INSARAG 新闻</button>
+    <button class="btn" data-tab="aggregator">多源聚合</button>
+    <button class="btn" data-tab="corpus">平行语料</button>
+    <button class="btn" data-tab="term">术语库</button>
+  </div>
+
+  <div class="filter-bar card" style="padding:12px">
+    <select id="f-domain"><option value="">全部领域</option></select>
+    <select id="f-review">
+      <option value="">全部审核状态</option>
+      <option value="已审核">已审核</option>
+      <option value="待审核">待审核</option>
+    </select>
+    <input type="search" id="q" placeholder="搜索…" style="flex:1;min-width:180px" />
+    <button class="btn primary" id="btn-new">＋ 新增</button>
+    <button class="btn" id="btn-ingest">从 data/ 重新 ingest</button>
+  </div>
+
+  <div class="card">
+    <table id="tbl">
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="muted" id="empty" style="display:none;padding:20px">空</div>
+  </div>
+</div>
+
+<!-- detail modal -->
+<div class="modal-mask" id="detail-mask" style="display:none">
+  <div class="modal" style="width:720px;max-height:85vh;overflow:auto">
+    <h2 id="d-title">详情</h2>
+    <div id="d-body"></div>
+    <div class="row" style="margin-top:16px;justify-content:flex-end">
+      <button class="btn" id="d-close">关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- edit modal -->
+<div class="modal-mask" id="form-mask" style="display:none">
+  <div class="modal" style="width:680px;max-height:88vh;overflow:auto">
+    <h2 id="f-title">新增</h2>
+    <div id="f-body"></div>
+    <div class="row" style="margin-top:16px;justify-content:flex-end">
+      <button class="btn" id="f-cancel">取消</button>
+      <button class="btn primary" id="f-save">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- delete confirm -->
+<div class="modal-mask" id="del-mask" style="display:none">
+  <div class="modal">
+    <h2>确认删除</h2>
+    <p id="del-text">删除后将同时移除其向量索引，不可恢复。</p>
+    <div class="row" style="justify-content:flex-end">
+      <button class="btn" id="del-cancel">取消</button>
+      <button class="btn danger" id="del-ok">确认删除</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+let tab = "news";
+let editing = null;
+let deleting = null;
+
+const TABS = {
+  news: {
+    columns: [["id", "ID"], ["title_zh", "标题(中)"], ["domain", "领域"], ["review_status", "审核"], ["publish_date", "日期"]],
+    endpoint: "/api/cms/news",
+    fields: ["id","title_en","title_zh","url","publish_date","language","source_org","domain","review_status","summary_en","summary_zh","content_en","content_zh","crawled_at"],
+    reviewTable: "news",
+  },
+  aggregator: {
+    columns: [["id","ID"],["source","来源"],["title_zh","标题(中)"],["domain","领域"],["event_type","事件"],["review_status","审核"]],
+    endpoint: "/api/cms/aggregator",
+    fields: ["id","source","title_en","title_zh","url","publish_date","domain","event_type","review_status","summary_en","summary_zh","content_en","content_zh"],
+    reviewTable: "aggregator",
+  },
+  corpus: {
+    columns: [["id","ID"],["source_text","原文"],["target_text","译文"],["page","页码"],["domain","领域"],["review_status","审核"]],
+    endpoint: "/api/cms/corpus",
+    fields: ["id","source_lang","target_lang","source_text","target_text","source_url","domain","page","review_status"],
+    reviewTable: "corpus",
+  },
+  term: {
+    columns: [["id","ID"],["zh_term","中文术语"],["en_term","英文术语"],["domain","领域"],["chapter","章节"],["review_status","审核"]],
+    endpoint: "/api/cms/terms",
+    fields: ["zh_term","en_term","definition","chapter","domain","source_url","review_status"],
+    reviewTable: "terminology",
+  },
+};
+
+function setTab(t) {
+  tab = t;
+  document.querySelectorAll("[data-tab]").forEach((b) =>
+    b.classList.toggle("primary", b.dataset.tab === t));
+  load();
+}
+
+function badge(v) {
+  const cls = v === "已审核" ? "approved" : "pending";
+  return `<span class="badge ${cls}">${escapeHtml(v || "待审核")}</span>`;
+}
+
+async function load() {
+  const cfg = TABS[tab];
+  const p = new URLSearchParams({ q: document.getElementById("q").value, limit: "500" });
+  const dom = document.getElementById("f-domain").value;
+  const rev = document.getElementById("f-review").value;
+  if (dom) p.set("domain", dom);
+  if (rev) p.set("review_status", rev);
+  const data = await api(cfg.endpoint + "?" + p.toString());
+  document.getElementById("thead").innerHTML =
+    "<tr>" + cfg.columns.map((c) => `<th>${c[1]}</th>`).join("") +
+    "<th style='width:230px'>操作</th></tr>";
+  const tb = document.getElementById("tbody");
+  if (!data.items.length) {
+    tb.innerHTML = "";
+    document.getElementById("empty").style.display = "block";
+    return;
+  }
+  document.getElementById("empty").style.display = "none";
+  tb.innerHTML = data.items.map((r) => {
+    const cells = cfg.columns.map(([k]) => {
+      let v = r[k] ?? "";
+      if (k === "review_status") return `<td>${badge(v)}</td>`;
+      if (k === "url" && v) return `<td><a href="${v}" target="_blank">链接</a></td>`;
+      if (typeof v === "string" && v.length > 42) v = v.slice(0, 42) + "…";
+      return `<td>${escapeHtml(v)}</td>`;
+    }).join("");
+    const id = r.id ?? r[cfg.columns[0][0]];
+    const cur = r.review_status === "已审核" ? "待审核" : "已审核";
+    return `<tr>
+      ${cells}
+      <td>
+        <button class="btn small" data-act="view" data-id="${escapeHtml(id)}">详情</button>
+        <button class="btn small" data-act="edit" data-id="${escapeHtml(id)}">编辑</button>
+        <button class="btn small" data-act="review" data-id="${escapeHtml(id)}" data-status="${cur}">置为${cur}</button>
+        <button class="btn small danger" data-act="del" data-id="${escapeHtml(id)}">删除</button>
+      </td></tr>`;
+  }).join("");
+}
+
+async function loadDomains() {
+  const f = await api("/api/cms/filters");
+  const sel = document.getElementById("f-domain");
+  const cur = sel.value;
+  sel.innerHTML = `<option value="">全部领域</option>` +
+    f.domains.map((d) => `<option>${escapeHtml(d)}</option>`).join("");
+  sel.value = cur;
+}
+
+function renderDetail(r) {
+  const cfg = TABS[tab];
+  document.getElementById("d-title").textContent = (r.title_zh || r.zh_term || r.id) + " — 详情";
+  let html = "<table>";
+  cfg.fields.forEach((f) => {
+    let v = r[f] ?? "";
+    if (f === "review_status") v = badge(v);
+    else if (f === "url" && v) v = `<a href="${v}" target="_blank">${v}</a>`;
+    else if (Array.isArray(v)) v = v.map((x) => `<span class="tag">${escapeHtml(x)}</span>`).join(" ");
+    else v = escapeHtml(v);
+    html += `<tr><th style="width:140px">${f}</th><td style="white-space:pre-wrap">${v}</td></tr>`;
+  });
+  html += "</table>";
+  document.getElementById("d-body").innerHTML = html;
+  document.getElementById("detail-mask").style.display = "flex";
+}
+
+function renderForm(r) {
+  const cfg = TABS[tab];
+  editing = r || null;
+  document.getElementById("f-title").textContent = r ? "编辑" : "新增";
+  let html = "";
+  cfg.fields.forEach((f) => {
+    const v = r ? (r[f] ?? "") : "";
+    const big = ["summary_en","summary_zh","content_en","content_zh","source_text","target_text","definition"].includes(f);
+    html += `<label>${f}</label>`;
+    html += big
+      ? `<textarea name="${f}">${escapeHtml(v)}</textarea>`
+      : `<input type="text" name="${f}" value="${escapeHtml(v)}" />`;
+  });
+  document.getElementById("f-body").innerHTML = html;
+  document.getElementById("form-mask").style.display = "flex";
+}
+
+function collectForm() {
+  const cfg = TABS[tab];
+  const out = {};
+  cfg.fields.forEach((f) => {
+    const el = document.querySelector(`#f-body [name="${f}"]`);
+    out[f] = el ? el.value : "";
+  });
+  return out;
+}
+
+async function saveForm() {
+  const cfg = TABS[tab];
+  const body = collectForm();
+  if (!body.id && tab !== "term") { alert("ID 不能为空"); return; }
+  try {
+    if (editing) {
+      await api(cfg.endpoint + "/" + encodeURIComponent(editing.id ?? editing), { method: "PUT", body: JSON.stringify(body) });
+    } else {
+      await api(cfg.endpoint, { method: "POST", body: JSON.stringify(body) });
+    }
+    document.getElementById("form-mask").style.display = "none";
+    load();
+  } catch (e) { alert("保存失败: " + e.message); }
+}
+
+async function doDelete() {
+  if (!deleting) return;
+  const cfg = TABS[tab];
+  try {
+    await api(cfg.endpoint + "/" + encodeURIComponent(deleting.id), { method: "DELETE" });
+    document.getElementById("del-mask").style.display = "none";
+    load();
+  } catch (e) { alert("删除失败: " + e.message); }
+}
+
+document.getElementById("q").addEventListener("input", () => load());
+document.getElementById("f-domain").addEventListener("change", load);
+document.getElementById("f-review").addEventListener("change", load);
+document.querySelectorAll("[data-tab]").forEach((b) =>
+  b.addEventListener("click", () => setTab(b.dataset.tab)));
+document.getElementById("btn-new").addEventListener("click", () => renderForm(null));
+document.getElementById("btn-ingest").addEventListener("click", async () => {
+  const r = await api("/api/ingest/run", { method: "POST" });
+  alert("ingest 完成:\n" + JSON.stringify(r, null, 2));
+  loadDomains(); load();
+});
+document.getElementById("tbody").addEventListener("click", async (e) => {
+  const btn = e.target.closest("button[data-act]");
+  if (!btn) return;
+  const id = btn.dataset.id;
+  const cfg = TABS[tab];
+  const data = await api(cfg.endpoint + "?limit=500");
+  const rec = data.items.find((x) => (x.id ?? x[cfg.columns[0][0]]) == id);
+  if (btn.dataset.act === "view") renderDetail(rec);
+  if (btn.dataset.act === "edit") renderForm(rec);
+  if (btn.dataset.act === "review") {
+    await api(`/api/cms/review/${cfg.reviewTable}/${encodeURIComponent(id)}`, {
+      method: "POST", body: JSON.stringify({ status: btn.dataset.status }),
+    });
+    load();
+  }
+  if (btn.dataset.act === "del") {
+    deleting = { id };
+    document.getElementById("del-text").textContent = `将删除 ${tab} 记录 "${id}"，并同步移除向量索引。`;
+    document.getElementById("del-mask").style.display = "flex";
+  }
+});
+document.getElementById("d-close").onclick = () => document.getElementById("detail-mask").style.display = "none";
+document.getElementById("f-cancel").onclick = () => document.getElementById("form-mask").style.display = "none";
+document.getElementById("f-save").onclick = saveForm;
+document.getElementById("del-cancel").onclick = () => document.getElementById("del-mask").style.display = "none";
+document.getElementById("del-ok").onclick = doDelete;
+
+loadDomains().then(() => setTab("news"));
+</script>
+</body>
+</html>

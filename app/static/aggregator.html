@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>多源信息聚合</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav"><div class="brand">INSARAG<span class="dot">·</span>ASEAN</div></nav>
+
+<div class="container">
+  <h1>多源信息聚合</h1>
+  <p class="sub">GDACS / AHA Centre / UNDRR / INSARAG 多源事件与新闻，中文浏览，原始 URL 可点击核对。支持按来源、领域、事件类型、审核状态筛选。</p>
+
+  <div class="filter-bar card" style="padding:12px">
+    <select id="f-source"><option value="">全部来源</option></select>
+    <select id="f-domain"><option value="">全部领域</option></select>
+    <select id="f-event"><option value="">全部事件类型</option></select>
+    <select id="f-review">
+      <option value="">全部审核状态</option>
+      <option value="已审核">已审核</option>
+      <option value="待审核">待审核</option>
+    </select>
+    <input type="search" id="f-q" placeholder="搜索标题 / 链接…" />
+  </div>
+
+  <div class="row" style="margin-bottom:10px">
+    <span class="muted" id="count">加载中…</span>
+  </div>
+
+  <div class="news-list" id="list"></div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+
+async function loadFilters() {
+  const f = await api("/api/cms/filters");
+  for (const s of f.sources) $("f-source").insertAdjacentHTML("beforeend", `<option>${s}</option>`);
+  for (const d of f.domains) $("f-domain").insertAdjacentHTML("beforeend", `<option>${d}</option>`);
+  for (const e of f.event_types) $("f-event").insertAdjacentHTML("beforeend", `<option>${e}</option>`);
+}
+
+async function load() {
+  const p = new URLSearchParams({
+    source: $("f-source").value, domain: $("f-domain").value,
+    event_type: $("f-event").value, review_status: $("f-review").value,
+    q: $("f-q").value, limit: "300",
+  });
+  const data = await api("/api/cms/aggregator?" + p.toString());
+  $("count").textContent = `共 ${data.total} 条`;
+  if (!data.items.length) {
+    $("list").innerHTML = `<div class="muted">暂无聚合数据（data/aggregator/ 为空，等待数据线上线）。</div>`;
+    return;
+  }
+  $("list").innerHTML = data.items.map((r) => {
+    const title = r.title_zh || r.title_en || r.id;
+    const link = r.url
+      ? `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>`
+      : escapeHtml(title);
+    const rev = r.review_status === "已审核" ? "approved" : "pending";
+    return `<div class="news-card">
+      <div class="row" style="justify-content:space-between">
+        <h3 style="flex:1">${link}</h3>
+        <span class="badge ${rev}">${escapeHtml(r.review_status)}</span>
+      </div>
+      <div class="meta">
+        <span class="tag">${escapeHtml(r.source)}</span>
+        ${r.domain ? `<span class="tag">${escapeHtml(r.domain)}</span>` : ""}
+        ${r.event_type ? `<span class="tag">${escapeHtml(r.event_type)}</span>` : ""}
+        ${r.publish_date ? `<span class="muted"> · ${escapeHtml(r.publish_date.slice(0,10))}</span>` : ""}
+      </div>
+      ${r.summary_zh || r.summary_en ? `<p class="summary">${escapeHtml(r.summary_zh || r.summary_en)}</p>` : ""}
+    </div>`;
+  }).join("");
+}
+
+["f-source","f-domain","f-event","f-review"].forEach((id) =>
+  $(id).addEventListener("change", load));
+$("f-q").addEventListener("input", () => { clearTimeout(window.__t); window.__t = setTimeout(load, 300); });
+
+loadFilters().then(load).catch((e) => {
+  $("list").innerHTML = `<div class="banner err">加载失败: ${escapeHtml(e.message)}</div>`;
+});
+</script>
+</body>
+</html>

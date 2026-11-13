@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>语音流式翻译</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">INSARAG<span class="dot">·</span>ASEAN</div>
+  <a class="link" href="/">门户</a>
+  <a class="link" href="/cms">知识库 CMS</a>
+  <a class="link" href="/rag">RAG 问答</a>
+  <a class="link" href="/translate">多语翻译</a>
+  <a class="link active" href="/voice">语音翻译</a>
+  <div class="spacer"></div>
+  <span class="pill" id="llm-pill">检测中…</span>
+</nav>
+
+<div class="container">
+  <h1>语音流式翻译</h1>
+  <p class="sub">浏览器原生 Web Speech API（SpeechRecognition / webkitSpeechRecognition）实时识别，识别结果自动送 DeepSeek 流式翻译。</p>
+
+  <div class="banner warn" id="env-note">
+    说明：本页使用真实 Web Speech API。在本机截图环境中，Chromium 通过
+    <span class="mono">--use-fake-ui-for-media-stream --use-fake-device-for-media-stream</span>
+    启动；真实使用时请用真机麦克风，并在支持的浏览器（Chrome / Edge）中访问。
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div style="flex:1">
+        <label>识别语言（语音输入）</label>
+        <select id="rec-lang"></select>
+      </div>
+      <div style="flex:1">
+        <label>翻译成</label>
+        <select id="tgt"></select>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn primary" id="mic">🎙 开始识别</button>
+      <button class="btn" id="stop" disabled>停止</button>
+      <span class="muted" id="status">未开始</span>
+    </div>
+  </div>
+
+  <h2>识别结果（实时）</h2>
+  <div class="stream-box" id="transcript">（点击"开始识别"后说话，文本会出现在这里）</div>
+
+  <h2>译文（流式）</h2>
+  <div class="stream-box" id="out">（识别结束后自动翻译）</div>
+
+  <h2>参考来源</h2>
+  <div class="sources" id="sources">未检索</div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null;
+let finalText = "";
+
+async function fillLangs() {
+  const langs = await api("/api/translate/languages");
+  const keys = Object.keys(langs);
+  $("rec-lang").innerHTML = keys.map((k) => `<option value="${k}">${langs[k]}</option>`).join("");
+  $("tgt").innerHTML = keys.map((k) => `<option value="${k}">${langs[k]}</option>`).join("");
+  $("rec-lang").value = "en";
+  $("tgt").value = "zh";
+}
+fillLangs();
+
+async function autoTranslate(text) {
+  $("out").textContent = "（翻译中…）";
+  $("sources").innerHTML = "检索中…";
+  try {
+    await ssePost("/api/translate/stream", {
+      text,
+      source_lang: $("rec-lang").value,
+      target_lang: $("tgt").value,
+      use_rag: true,
+    }, {
+      onToken: (t) => {
+        if ($("out").textContent.startsWith("（")) $("out").textContent = "";
+        $("out").textContent += t;
+      },
+      onSources: (items) => { $("sources").innerHTML = renderSources(items); },
+      onError: (m) => { $("out").innerHTML = `<div class="banner err">${escapeHtml(m)}</div>`; },
+    });
+  } catch (e) {
+    $("out").innerHTML = `<div class="banner err">${escapeHtml(e.message)}</div>`;
+  }
+}
+
+function startRecognition() {
+  if (!SR) {
+    $("status").textContent = "当前浏览器不支持 Web Speech API";
+    return;
+  }
+  rec = new SR();
+  rec.lang = $("rec-lang").value;
+  rec.interimResults = true;
+  rec.continuous = true;
+  finalText = "";
+  $("transcript").textContent = "";
+  $("out").textContent = "（识别结束后自动翻译）";
+
+  rec.onresult = (e) => {
+    let interim = "";
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      if (e.results[i].isFinal) finalText += e.results[i][0].transcript;
+      else interim += e.results[i][0].transcript;
+    }
+    $("transcript").textContent = finalText + interim;
+  };
+  rec.onerror = (e) => { $("status").textContent = "识别错误: " + e.error; };
+  rec.onend = () => {
+    $("status").textContent = "识别结束";
+    $("mic").disabled = false;
+    $("stop").disabled = true;
+    if (finalText.trim()) autoTranslate(finalText.trim());
+  };
+  rec.start();
+  $("status").textContent = "识别中…";
+  $("mic").disabled = true;
+  $("stop").disabled = false;
+}
+
+$("mic").onclick = startRecognition;
+$("stop").onclick = () => { if (rec) rec.stop(); };
+
+// Exposed for the screenshot harness: inject a final transcript and trigger translation
+window.__voiceInject = function (text) {
+  finalText = text;
+  $("transcript").textContent = text;
+  autoTranslate(text);
+};
+</script>
+</body>
+</html>

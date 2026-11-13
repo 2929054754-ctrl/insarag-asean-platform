@@ -1,0 +1,352 @@
+[
+  {
+    "id": "undrr-001",
+    "source": "UNDRR",
+    "title": {
+      "en": "Webinar: Advancing Inclusive and Last-Mile Early Warning Systems in Africa",
+      "zh": "网络研讨会：推进非洲包容性「最后一公里」预警系统建设"
+    },
+    "url": "https://www.undrr.org/event/webinar-advancing-inclusive-and-last-mile-early-warning-systems-africa",
+    "publish_date": "2026-11-03T09:07:24Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "This webinar aims to advance dialogue, knowledge sharing, and collaboration on strengthening inclusive and last-mile early warning systems across Africa as a key enabler of the Early Warnings for All initiative.",
+      "zh": "本次网络研讨会旨在推动对话、知识共享与协作，加强非洲包容性「最后一公里」预警系统建设。"
+    },
+    "content": {
+      "en": "This webinar aims to advance dialogue, knowledge sharing, and collaboration on strengthening inclusive and last-mile early warning systems across Africa as a key enabler of the Early Warnings for All initiative.",
+      "zh": "本次网络研讨会旨在推动对话、知识共享与协作，加强非洲包容性「最后一公里」预警系统建设，确保预警信息抵达最偏远、最脆弱的社区，落实联合国全民预警倡议。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "5cceadb2e33f8245cf96206349baad195dae7fef6a229b42d3ce4d9ac2feb752",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-005",
+    "source": "UNDRR",
+    "title": {
+      "en": "UNDRR, ESCWA, and League of Arab States advance regional cooperation on disaster statistics for risk-informed decision-making",
+      "zh": "UNDRR、ESCWA 与阿盟推进阿拉伯区域灾害统计合作"
+    },
+    "url": "https://www.undrr.org/news/undrr-escwa-and-league-arab-states-advance-regional-cooperation-disaster-statistics-risk",
+    "publish_date": "2026-11-01T13:47:35Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "A regional workshop held in Cairo from 27–29 October 2026 brought together experts from across the Arab region to strengthen disaster data systems, advance risk-informed policymaking, and support anticipatory action.",
+      "zh": "2026年10月27–29日在开罗举行的区域研讨会汇聚阿拉伯地区专家，加强灾害统计数据收集与报告能力。"
+    },
+    "content": {
+      "en": "A regional workshop held in Cairo from 27–29 October 2026 brought together experts from across the Arab region to strengthen disaster data systems, advance risk-informed policymaking, and support anticipatory action.",
+      "zh": "2026年10月27日至29日在开罗举行的区域研讨会汇聚阿拉伯地区专家，共同加强灾害统计数据收集与报告能力，推动落实《仙台减灾框架》下的灾害损失数据库建设与数据标准化。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "395208853505bbbdd8ec145336ee23c650f9c238ac854a5bb15799af85de3ab2",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-006",
+    "source": "UNDRR",
+    "title": {
+      "en": "Seven innovations that buy time before a tsunami reaches the shore",
+      "zh": "海啸到达海岸前赢得时间的七项创新"
+    },
+    "url": "https://www.undrr.org/news/seven-innovations-buy-time-tsunami-reaches-shore",
+    "publish_date": "2026-11-01T10:21:46Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "A tsunami warning is a race against time. A wave triggered close to shore can arrive within minutes, and when a volcano or landslide is the source, systems designed around earthquakes may register the threat late or not at all.",
+      "zh": "海啸预警是一场与时间的赛跑。近岸触发的海浪可能在数分钟内抵达，火山活动引发的海啸更是如此。"
+    },
+    "content": {
+      "en": "A tsunami warning is a race against time. A wave triggered close to shore can arrive within minutes, and when a volcano or landslide is the source, systems designed around earthquakes may register the threat late or not at all.",
+      "zh": "海啸预警是一场与时间的赛跑。近岸触发的海浪可能在数分钟内抵达海岸，而火山活动引发的海啸留给应急部门的时间更短。本文介绍七项创新技术——包括深海海啸评估与报告（DART）浮标、地震台网快速定位、海平面站实时监测、水下声学监测、人工智能海啸预报模型、社区疏散警报系统和卫星遥感——帮助在海啸到达前赢得宝贵时间。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "8e15a1f6d872970a114e660a1f901e8b599bad64d4429f6d84f357d772d61ef0",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-008",
+    "source": "UNDRR",
+    "title": {
+      "en": "Niamey charts a path towards improved urban resilience",
+      "zh": "尼亚美规划城市韧性提升路径"
+    },
+    "url": "https://www.undrr.org/news/niamey-charts-path-towards-improved-urban-resilience",
+    "publish_date": "2026-10-30T11:36:50Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "The City of Niamey and UNDRR organized a capacity-building assessment on disaster risk reduction from 8 to 10 August 2026, as part of MCR2030.",
+      "zh": "尼日尔尼亚美市与 UNDRR 于2026年8月8–10日组织灾害风险管理能力建设评估。"
+    },
+    "content": {
+      "en": "The City of Niamey and UNDRR organized a capacity-building assessment on disaster risk reduction from 8 to 10 August 2026, as part of MCR2030.",
+      "zh": "尼日尔尼亚美市与联合国减灾办（UNDRR）于2026年8月8日至10日组织了灾害风险管理能力建设评估，帮助城市识别风险治理短板、制定韧性建设优先行动，推进「更安全城市」倡议。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "f6809a9f8040d129a72187391d14671a27ba350600f119c88da99a82f43110d8",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-010",
+    "source": "UNDRR",
+    "title": {
+      "en": "Let’s take charge of resilience. By working together we can be tsunami ready says UN Secretary-General António Guterres",
+      "zh": "联合国秘书长：让我们主动掌控韧性，携手做到海啸就绪"
+    },
+    "url": "https://www.undrr.org/news/lets-take-charge-resilience-working-together-we-can-be-tsunami-ready-says-un-secretary-general",
+    "publish_date": "2026-10-30T08:08:02Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "On this World Tsunami Awareness Day, let’s take charge of resilience. By working together we can be tsunami ready – and save lives whenever the waves strike.",
+      "zh": "在世界海啸意识日之际，联合国秘书长呼吁各国主动掌控韧性，通过合作做到海啸就绪。"
+    },
+    "content": {
+      "en": "On this World Tsunami Awareness Day, let’s take charge of resilience. By working together we can be tsunami ready – and save lives whenever the waves strike.",
+      "zh": "在世界海啸意识日（11月5日）之际，联合国秘书长发表致辞：让我们主动掌控韧性，通过合作做到海啸就绪——并在这一过程中拯救生命。致辞强调预警系统、社区备灾和沿海城市规划在减少海啸风险中的核心作用。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "2bd5cc1cc4cec5d23acb8c164fc3835a172d10eb9d96b27d8df0715bbb3f4a5e",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-013",
+    "source": "UNDRR",
+    "title": {
+      "en": "Concept note: World Tsunami Awareness Day 2026",
+      "zh": "概念说明：2026年世界海啸意识日"
+    },
+    "url": "https://www.undrr.org/publication/documents-and-publications/concept-note-world-tsunami-awareness-day-2026",
+    "publish_date": "2026-10-29T15:18:20Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "The theme of World Tsunami Awareness Day 2026, on 5 November, is “Be Tsunami Ready: Resilience Starts With You”. It builds on WTAD 2025’s emphasis on investment in preparedness by focusing on individual and community action.",
+      "zh": "2026年世界海啸意识日（11月5日）主题为「做到海啸就绪：韧性从你开始」。"
+    },
+    "content": {
+      "en": "The theme of World Tsunami Awareness Day 2026, on 5 November, is “Be Tsunami Ready: Resilience Starts With You”. It builds on WTAD 2025’s emphasis on investment in preparedness by focusing on individual and community action.",
+      "zh": "2026年世界海啸意识日定于11月5日，主题为「做到海啸就绪：韧性从你开始」（Be Tsunami Ready: Resilience Starts With You）。活动延续「全民预警」精神，呼吁沿海社区、学校和地方政府开展演练、识别疏散路线、建立本地警报机制，把预警转化为救命行动。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "6ca475cda62339ef5d5cc85ab0865d7351ae450461d0a5a952485d458bf3678f",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-016",
+    "source": "UNDRR",
+    "title": {
+      "en": "Nine examples of tsunami readiness – turning warnings into life-saving action",
+      "zh": "海啸就绪九例——把预警转化为救命行动"
+    },
+    "url": "https://www.undrr.org/news/nine-examples-tsunami-readiness-turning-warnings-life-saving-action",
+    "publish_date": "2026-10-28T14:09:48Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "A tsunami can reach the coast within minutes of an earthquake or other sudden disturbance, sometimes before any official alert. What people already know, and what they do in those first minutes, often decides who survives.",
+      "zh": "地震或其他突发扰动后海啸可在数分钟内抵达海岸，官方警报可能尚未发布。本文介绍九个海啸就绪实践案例。"
+    },
+    "content": {
+      "en": "A tsunami can reach the coast within minutes of an earthquake or other sudden disturbance, sometimes before any official alert. What people already know, and what they do in those first minutes, often decides who survives.",
+      "zh": "海啸可在地震或其他突发扰动后数分钟内抵达海岸，有时官方警报尚未发布。本文介绍九个海啸就绪实践案例，涵盖社区疏散演练、学校教育、地方警报系统、沿海建筑后退线、海啸树标识、志愿者巡逻、海平面监测、跨城市协作和公众宣传，展示如何把预警转化为救命行动。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "e85e7d4f2dcdd719e196de71dafdde832e9f3cc021595bdafb35e3f8d55774f9",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-018",
+    "source": "UNDRR",
+    "title": {
+      "en": "UNDRR advances climate resilience, early warning systems, and risk-informed water management at Cairo Water Week 2026",
+      "zh": "UNDRR 在开罗水周推进气候韧性、预警系统和风险知情水资源管理"
+    },
+    "url": "https://www.undrr.org/news/undrr-advances-climate-resilience-early-warning-systems-and-risk-informed-water-management",
+    "publish_date": "2026-10-28T07:39:06Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "At Cairo Water Week 2026, UNDRR promoted risk-informed water management, early warning systems, and climate resilience through regional cooperation.",
+      "zh": "在2026开罗水周上，UNDRR 推广风险知情水资源管理、预警系统和气候韧性，强调水灾害与气候风险协同治理。"
+    },
+    "content": {
+      "en": "At Cairo Water Week 2026, UNDRR promoted risk-informed water management, early warning systems, and climate resilience through regional cooperation.",
+      "zh": "在2026开罗水周上，联合国减灾办（UNDRR）推广风险知情水资源管理、预警系统和气候韧性，强调干旱、洪水等水相关灾害风险与气候适应行动需协同推进，支持阿拉伯国家将灾害风险纳入水资源规划。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "2f4ead5eff98c18ec94ab2762ecd42f5481c476c79bfb5ca1fdadfa70fc2b576",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-022",
+    "source": "UNDRR",
+    "title": {
+      "en": "Count what matters: non-economic losses symposium in the Pacific",
+      "zh": "重视真正重要的事：太平洋非经济损失专题研讨会"
+    },
+    "url": "https://www.undrr.org/news/count-what-matters-non-economic-losses-symposium-pacific",
+    "publish_date": "2026-10-27T13:02:19Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "The symposium provided a platform for continued exchange on approaches to NELs in the Pacific and identified areas for follow-up related to evidence, policy, capacity, coordination, finance and technical assistance.",
+      "zh": "研讨会为太平洋地区非经济损失（NEL）方法交流提供平台，识别后续合作领域。"
+    },
+    "content": {
+      "en": "The symposium provided a platform for continued exchange on approaches to NELs in the Pacific and identified areas for follow-up related to evidence, policy, capacity, coordination, finance and technical assistance.",
+      "zh": "本次研讨会为太平洋地区非经济损失（Non-Economic Losses, NEL）方法持续交流提供平台，识别后续合作领域。非经济损失包括文化遗产、生计、健康、社会凝聚力等难以货币化但对小岛屿发展中国家至关重要的损失维度。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "e0125d48599f2d93dd327bd717585caf21f05ff31249b03e40118c14ce030038",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-026",
+    "source": "UNDRR",
+    "title": {
+      "en": "The Fund for responding to Loss and Damage",
+      "zh": "损失与损害响应基金"
+    },
+    "url": "https://www.undrr.org/organization/fund-responding-loss-and-damage",
+    "publish_date": "2026-10-26T16:38:33Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "The Fund for responding to Loss and Damage (FRLD) addresses the growing needs of vulnerable communities in developing countries facing the irreversible impacts of climate change. By financing recovery initiatives from climate-related losses and damage.",
+      "zh": "损失与损害响应基金（FRLD）应对发展中脆弱社区日益增长的需求，支持气候相关灾害的应对与恢复。"
+    },
+    "content": {
+      "en": "The Fund for responding to Loss and Damage (FRLD) addresses the growing needs of vulnerable communities in developing countries facing the irreversible impacts of climate change. By financing recovery initiatives from climate-related losses and damage.",
+      "zh": "损失与损害响应基金（Fund for responding to Loss and Damage, FRLD）应对发展中脆弱社区日益增长的需求，支持气候相关灾害造成的不可逆损失与损害的应对、恢复与重建，是联合国气候谈判框架下的关键资金机制。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "e191956d409b15f59000ce711212b2cd1bc977d5b2f38fbfeb34967d61d5cc2e",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-028",
+    "source": "UNDRR",
+    "title": {
+      "en": "Capacity Building Workshop on Financing Disaster Risk Reduction (DRR)",
+      "zh": "灾害风险融资能力建设研讨会"
+    },
+    "url": "https://www.undrr.org/event/capacity-building-workshop-financing-disaster-risk-reduction-drr-1",
+    "publish_date": "2026-10-26T13:08:16Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "The Capacity Building Workshop on Financing Disaster Risk Reduction (DRR) equips government officials and experts with practical tools to assess financing needs, identify investment gaps, mobilize resources, and develop national DRR financing strategies.",
+      "zh": "灾害风险融资（DRR）能力建设研讨会为政府官员和专家提供公共投资、保险和风险转移工具方面的实务培训。"
+    },
+    "content": {
+      "en": "The Capacity Building Workshop on Financing Disaster Risk Reduction (DRR) equips government officials and experts with practical tools to assess financing needs, identify investment gaps, mobilize resources, and develop national DRR financing strategies.",
+      "zh": "灾害风险融资（DRR Financing）能力建设研讨会为政府官员和专家提供实务培训，内容涵盖公共投资规划、巨灾保险、风险转移工具、灾害准备金和社会保护联动，帮助各国建立可持续的减灾融资体系。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "51dc968072f3d57f5e2e115c7fc86f3406711621a67371c8ddd10e9dfe373a09",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-036",
+    "source": "UNDRR",
+    "title": {
+      "en": "Putting risk communication at the heart of disaster preparedness",
+      "zh": "把风险沟通置于灾害准备的核心"
+    },
+    "url": "https://www.undrr.org/news/putting-risk-communication-heart-disaster-preparedness",
+    "publish_date": "2026-10-22T15:38:31Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "UNDRR, UNESCO and IFRC brought experts together in Geneva to explore how to overcome barriers to effective risk communication and turn disaster warnings into informed, life-saving action.",
+      "zh": "UNDRR、联合国教科文组织和红十字与红新月会国际联合会在日内瓦召集专家，探讨如何克服有效风险沟通的障碍。"
+    },
+    "content": {
+      "en": "UNDRR, UNESCO and IFRC brought experts together in Geneva to explore how to overcome barriers to effective risk communication and turn disaster warnings into informed, life-saving action.",
+      "zh": "联合国减灾办（UNDRR）、联合国教科文组织（UNESCO）和红十字与红新月会国际联合会（IFRC）在日内瓦召集专家，探讨如何克服有效风险沟通的障碍，重点关注多语言预警、社区参与、行为改变和信任建设，把风险沟通置于灾害准备工作的核心位置。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "2c5978593038f52e57ef1406c3896781d27e56b0a06f42ff5029b865eea0c83d",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-038",
+    "source": "UNDRR",
+    "title": {
+      "en": "Watch Fire",
+      "zh": "Watch Fire：全球实时野火地图"
+    },
+    "url": "https://www.undrr.org/organization/watch-fire",
+    "publish_date": "2026-10-22T13:58:23Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "Watch Fire is a live worldwide wildfire map. See where fires are burning right now, whether a fire is still active, what is under threat nearby and what the coming hours may bring. Available in eleven languages and accessible to everyone.",
+      "zh": "Watch Fire 是一张全球实时野火地图，可查看当前火灾位置、是否仍在燃烧及火势范围。"
+    },
+    "content": {
+      "en": "Watch Fire is a live worldwide wildfire map. See where fires are burning right now, whether a fire is still active, what is under threat nearby and what the coming hours may bring. Available in eleven languages and accessible to everyone.",
+      "zh": "Watch Fire 是一张全球实时野火地图，用户可查看当前正在燃烧的火灾位置、火势是否活跃、影响范围和热点强度，用于野火监测、应急响应和公众教育。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "91086be204b19fb1830c96b33826fae4bc8c0dd04e8a407d793bb309a9f9b88e",
+    "version": "2.0"
+  },
+  {
+    "id": "undrr-039",
+    "source": "UNDRR",
+    "title": {
+      "en": "Geneva students take disaster preparedness home",
+      "zh": "日内瓦学生把灾害准备带回家"
+    },
+    "url": "https://www.undrr.org/news/geneva-students-take-disaster-preparedness-home",
+    "publish_date": "2026-10-22T10:31:49Z",
+    "language": "en",
+    "domain": "灾害风险管理",
+    "event_type": "NR",
+    "summary": {
+      "en": "A hands-on experience of disaster risk reduction helps equip the next generation for a resilient future.",
+      "zh": "亲身体验灾害风险管理有助于为下一代建设韧性未来做好准备。"
+    },
+    "content": {
+      "en": "A hands-on experience of disaster risk reduction helps equip the next generation for a resilient future.",
+      "zh": "日内瓦组织学生亲身体验灾害风险管理，通过应急演练、风险识别和家庭备灾包制作等活动，帮助下一代从小建立灾害准备意识，为韧性未来做好准备。"
+    },
+    "review_status": "待审核",
+    "crawled_at": "2026-11-03T10:52:57Z",
+    "checksum": "8b382ee0f1b021de941bcf7cc0b3a3e75d49ba73d50f61e35e49dcfd55593b7d",
+    "version": "2.0"
+  }
+]

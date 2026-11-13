@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>东盟多语互译</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav"><div class="brand">INSARAG<span class="dot">·</span>ASEAN</div></nav>
+
+<div class="container">
+  <h1>东盟多语种互译</h1>
+  <p class="sub">10 语种任意互译；命中术语库强制采用规范译法并高亮；同时检索术语 / 语料 / 聚合 / 新闻作为来源。</p>
+
+  <div class="card">
+    <div class="row">
+      <div style="flex:1">
+        <label>源语言</label>
+        <select id="src"></select>
+      </div>
+      <button class="btn" id="swap" style="margin-top:24px">⇄</button>
+      <div style="flex:1">
+        <label>目标语言</label>
+        <select id="tgt"></select>
+      </div>
+      <label style="margin-top:24px"><input type="checkbox" id="rag" checked style="width:auto" /> RAG 增强</label>
+    </div>
+
+    <label>输入文本 <span class="muted">（命中术语会在下方高亮）</span></label>
+    <textarea id="text" placeholder="例如：The On-Site Operations Coordination Centre (OSOCC) coordinates international USAR teams."></textarea>
+    <div class="term-row" id="term-hits" style="display:none"></div>
+
+    <div class="row" style="margin-top:10px">
+      <button class="btn primary" id="go">翻译（流式）</button>
+      <button class="btn" id="clear">清空输入</button>
+      <button class="btn" id="copy">复制译文</button>
+    </div>
+  </div>
+
+  <h2>原文预览</h2>
+  <div class="stream-box" id="src-view" style="min-height:40px">（输入后显示，术语命中处高亮）</div>
+
+  <h2>译文</h2>
+  <div class="stream-box" id="out">（等待翻译）</div>
+
+  <h2>参考来源（术语 / 平行句 / 聚合 / 新闻）</h2>
+  <div class="sources" id="sources">未检索</div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+let lastTerms = [];
+let lastOutput = "";
+
+async function fillLangs() {
+  const langs = await api("/api/translate/languages");
+  const keys = Object.keys(langs);
+  $("src").innerHTML = `<option value="auto">自动检测</option>` +
+    keys.map((k) => `<option value="${k}">${langs[k]}</option>`).join("");
+  $("tgt").innerHTML = keys.map((k) => `<option value="${k}">${langs[k]}</option>`).join("");
+  $("src").value = "auto";
+  $("tgt").value = "zh";
+}
+fillLangs();
+
+$("swap").onclick = () => {
+  const s = $("src").value, t = $("tgt").value;
+  if (s !== "auto") { $("src").value = t; $("tgt").value = s; }
+};
+
+$("text").addEventListener("input", () => {
+  $("src-view").innerHTML = $("text").value
+    ? escapeHtml($("text").value)
+    : "（输入后显示，术语命中处高亮）";
+});
+
+$("clear").onclick = () => {
+  $("text").value = "";
+  $("src-view").textContent = "（输入后显示，术语命中处高亮）";
+  $("out").textContent = "（等待翻译）";
+  $("sources").innerHTML = "未检索";
+  $("term-hits").style.display = "none";
+  lastTerms = []; lastOutput = "";
+};
+
+$("copy").onclick = async () => {
+  if (!lastOutput) { alert("暂无译文可复制"); return; }
+  try {
+    await navigator.clipboard.writeText(lastOutput);
+    const b = $("copy"); const old = b.textContent;
+    b.textContent = "已复制 ✓"; setTimeout(() => (b.textContent = old), 1200);
+  } catch (e) { alert("复制失败: " + e.message); }
+};
+
+$("go").onclick = async () => {
+  const text = $("text").value.trim();
+  if (!text) return;
+  $("out").textContent = "（翻译中…）";
+  $("sources").innerHTML = "检索中…";
+  lastOutput = ""; lastTerms = [];
+  try {
+    await ssePost("/api/translate/stream", {
+      text, source_lang: $("src").value, target_lang: $("tgt").value,
+      use_rag: $("rag").checked,
+    }, {
+      onToken: (t) => {
+        if ($("out").textContent.startsWith("（")) $("out").textContent = "";
+        lastOutput += t;
+        $("out").innerHTML = highlightTerms(lastOutput, lastTerms);
+      },
+      onTerms: (items) => {
+        lastTerms = items;
+        $("src-view").innerHTML = highlightTerms(text, items);
+        const box = $("term-hits");
+        if (items.length) {
+          box.style.display = "block";
+          box.innerHTML = "命中术语（强制采用规范译法）：" + items.map((h) =>
+            `<span class="term-chip"><b>${escapeHtml(h.matched)}</b> → ${escapeHtml(h.target)}</span>`).join("");
+        } else {
+          box.style.display = "none";
+        }
+      },
+      onSources: (items) => { $("sources").innerHTML = renderSources(items); },
+      onError: (m) => { $("out").innerHTML = `<div class="banner err">${escapeHtml(m)}</div>`; },
+    });
+  } catch (e) {
+    $("out").innerHTML = `<div class="banner err">请求失败: ${escapeHtml(e.message)}</div>`;
+  }
+};
+</script>
+</body>
+</html>

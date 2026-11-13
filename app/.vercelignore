@@ -1,0 +1,10 @@
+# Never upload secrets or build artifacts to the function bundle.
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+out/
+scripts/
+shoot.py
+README.md

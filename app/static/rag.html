@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RAG 智能问答</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<nav class="nav"><div class="brand">INSARAG<span class="dot">·</span>ASEAN</div></nav>
+
+<div class="container">
+  <h1>RAG 智能问答</h1>
+  <p class="sub">问题向量化 → 四库余弦 Top-K → DeepSeek 流式作答；最高相关度低于阈值时明确拒答、不臆测。</p>
+
+  <div class="card">
+    <label>你的问题</label>
+    <textarea id="q" placeholder="例如：OSOCC 是什么？重型 USAR 队如何自部署？"></textarea>
+    <div class="filter-bar" style="margin-top:10px;align-items:center">
+      <label style="margin:0">检索库：</label>
+      <label style="margin:0"><input type="checkbox" class="lib" value="news" checked style="width:auto" /> INSARAG新闻</label>
+      <label style="margin:0"><input type="checkbox" class="lib" value="aggregator" checked style="width:auto" /> 多源聚合</label>
+      <label style="margin:0"><input type="checkbox" class="lib" value="corpus" checked style="width:auto" /> 平行语料</label>
+      <label style="margin:0"><input type="checkbox" class="lib" value="term" checked style="width:auto" /> 术语库</label>
+      <span class="muted" style="margin-left:auto">Top-K: <input type="text" id="k" value="5" style="width:60px;display:inline-block" /></span>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn primary" id="ask">提问（流式）</button>
+      <button class="btn" id="probe">仅检索（验证余弦）</button>
+    </div>
+  </div>
+
+  <h2>回答</h2>
+  <div class="stream-box" id="answer">（等待提问）</div>
+  <div class="reasoning" id="reasoning" style="display:none"></div>
+
+  <h2>来源（可点击核对，含页码）</h2>
+  <div class="sources" id="sources">未检索</div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+
+function selectedTypes() {
+  return [...document.querySelectorAll(".lib:checked")].map((c) => c.value);
+}
+
+$("ask").onclick = async () => {
+  const question = $("q").value.trim();
+  if (!question) return;
+  $("answer").textContent = "（生成中…）";
+  $("reasoning").style.display = "none";
+  $("reasoning").textContent = "";
+  $("sources").innerHTML = "检索中…";
+  try {
+    await ssePost("/api/rag/ask", {
+      question, top_k: parseInt($("k").value || "5"), source_types: selectedTypes(),
+    }, {
+      onToken: (t) => {
+        if ($("answer").textContent.startsWith("（")) $("answer").textContent = "";
+        $("answer").textContent += t;
+      },
+      onReasoning: (t) => {
+        $("reasoning").style.display = "block";
+        $("reasoning").textContent += t;
+      },
+      onRefuse: (text) => {
+        $("answer").innerHTML = `<div class="banner refuse">${escapeHtml(text)}</div>`;
+      },
+      onSources: (items) => { $("sources").innerHTML = renderSources(items); },
+      onDone: () => {},
+      onError: (m) => {
+        $("answer").innerHTML = `<div class="banner err">${escapeHtml(m)}</div>`;
+      },
+    });
+  } catch (e) {
+    $("answer").innerHTML = `<div class="banner err">请求失败: ${escapeHtml(e.message)}</div>`;
+  }
+};
+
+$("probe").onclick = async () => {
+  const q = $("q").value.trim();
+  if (!q) return;
+  const r = await api("/api/rag/retrieve", {
+    method: "POST", body: JSON.stringify({ question: q, top_k: parseInt($("k").value||"5"), source_types: selectedTypes() }),
+  });
+  $("answer").innerHTML = `<div class="banner ok">嵌入后端：${r.backend}，向量维度：${r.dim}，命中 ${r.items.length} 条（拒答阈值 ${r.min_score}）</div>`;
+  $("sources").innerHTML = renderSources(r.items);
+};
+
+$("q").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) $("ask").click();
+});
+</script>
+</body>
+</html>

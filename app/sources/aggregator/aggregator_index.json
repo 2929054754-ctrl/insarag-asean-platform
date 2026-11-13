@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-11-03T13:18:33Z",
+  "sources": {
+    "GDACS": {
+      "file": "gdacs_events.json",
+      "count": 44,
+      "note": "Raw GeoJSON (100 features) fetched via plain curl from https://www.gdacs.org/gdacsapi/api/events/geteventlist/EVENTS4APP; selected representative events (all EQ/FL/TC + varied WF) after dedup by eventid. Original raw retained at data/aggregator/gdacs_raw.json."
+    },
+    "AHA Centre": {
+      "file": "aha_news.json",
+      "count": 45
+    },
+    "UNDRR": {
+      "file": "undrr_news.json",
+      "count": 14
+    }
+  },
+  "total_new": 103,
+  "total_with_insarag": 113,
+  "domains": [
+    "人道主义协调",
+    "灾害风险管理",
+    "灾害预警",
+    "INSARAG搜救"
+  ]
+}

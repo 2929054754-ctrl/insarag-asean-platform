@@ -1,0 +1,7 @@
+{
+  "buildCommand": "bash build_static.sh",
+  "installCommand": "pip install -r requirements-prod.txt",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}

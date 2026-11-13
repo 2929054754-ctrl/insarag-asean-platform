@@ -1,0 +1,16 @@
+# Root config: app code lives under ./app
+[build]
+  base = "app"
+  publish = "out"
+  functions = "netlify/functions"
+  command = "pip install -r requirements-prod.txt && bash build_static.sh"
+
+# Ship the prebuilt SQLite vector store and all source data inside the function
+[functions]
+  included_files = ["data/app.db", "sources/**"]
+
+# All non-static traffic goes to the ASGI function
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/app"
+  status = 200
